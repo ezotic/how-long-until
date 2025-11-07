@@ -15,6 +15,9 @@ resource "docker_image" "howmany" {
     path = "."
     dockerfile = "Dockerfile"
   }
+  triggers = {
+    dir_sha1 = sha1(join("", [for f in fileset(path.module, "app/**") : filesha1(f)]))
+  }
 }
 
 resource "docker_container" "howmany_container" {

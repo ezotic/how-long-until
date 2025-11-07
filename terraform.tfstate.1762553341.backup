@@ -1,0 +1,55 @@
+{
+  "version": 4,
+  "terraform_version": "1.13.5",
+  "serial": 62,
+  "lineage": "dd99c1f9-e658-e9ab-ecab-965ee417074b",
+  "outputs": {
+    "container_port": {
+      "value": 8080,
+      "type": "number"
+    }
+  },
+  "resources": [
+    {
+      "mode": "managed",
+      "type": "docker_image",
+      "name": "howmany",
+      "provider": "provider[\"registry.terraform.io/kreuzwerker/docker\"]",
+      "instances": [
+        {
+          "schema_version": 0,
+          "attributes": {
+            "build": [
+              {
+                "build_arg": null,
+                "dockerfile": "Dockerfile",
+                "force_remove": null,
+                "label": null,
+                "no_cache": null,
+                "path": ".",
+                "remove": true,
+                "tag": [],
+                "target": ""
+              }
+            ],
+            "force_remove": null,
+            "id": "sha256:857c1fae21ac6d7b25bb0733ee7c524c2afb026b201281bc652df4d4b5cfb2f0howmany",
+            "image_id": "sha256:857c1fae21ac6d7b25bb0733ee7c524c2afb026b201281bc652df4d4b5cfb2f0",
+            "keep_locally": null,
+            "latest": "sha256:857c1fae21ac6d7b25bb0733ee7c524c2afb026b201281bc652df4d4b5cfb2f0",
+            "name": "howmany",
+            "output": null,
+            "pull_trigger": null,
+            "pull_triggers": null,
+            "repo_digest": "",
+            "triggers": null
+          },
+          "sensitive_attributes": [],
+          "identity_schema_version": 0,
+          "private": "bnVsbA=="
+        }
+      ]
+    }
+  ],
+  "check_results": null
+}
