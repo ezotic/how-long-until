@@ -4,4 +4,3 @@
 *.tfvars
 *.tfplan
 .terraform.lock.hcl
-README.md
