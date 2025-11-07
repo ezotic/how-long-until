@@ -16,6 +16,15 @@ This project deploys a Docker container running a simple web application that co
 *   Docker
 *   Terraform
 
+## Prerequisites
+
+Before you begin, ensure you have the following installed:
+
+*   **Docker:** Used for containerizing the web application.
+    *   [Install Docker](https://docs.docker.com/get-docker/)
+*   **Terraform:** Used for defining and provisioning the infrastructure (Docker image and container).
+    *   [Install Terraform](https://developer.hashicorp.com/terraform/downloads)
+
 ## Setup Instructions
 
 1.  **Clone the repository:**
